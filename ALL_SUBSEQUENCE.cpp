@@ -27,3 +27,23 @@ int main() {
     return 0;
 }
 
+/*
+class Solution {
+    private:
+    void solve(vector<int> nums , vector<vector<int>> &ans , vector<int> &output , int start){
+          ans.push_back(output);
+          for(int i=start;i<nums.size();++i){
+            output.push_back(nums[i]);
+            solve(nums,ans,output,i+1);
+            output.pop_back();
+          }
+ }
+public:
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> ans;
+        vector<int> output;
+        solve(nums, ans ,output,0);
+           return ans;
+    }
+};
+*/
